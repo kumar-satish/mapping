@@ -15,5 +15,14 @@ public class Projects {
     private String projectDomain;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "student_project",
+            joinColumns = {
+                    @JoinColumn(name = "project_id")
+            },
+            inverseJoinColumns = {
+                    @JoinColumn(name = "student_id")
+            }
+    )
     private List<Student> students = new ArrayList<>();
 }

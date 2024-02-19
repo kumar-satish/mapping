@@ -1,5 +1,6 @@
 package com.sesc.mapping;
 
+import com.sesc.mapping.models.Address;
 import com.sesc.mapping.models.Department;
 import com.sesc.mapping.models.Projects;
 import com.sesc.mapping.models.Student;
@@ -41,7 +42,7 @@ public class MappingApplication implements CommandLineRunner {
   */
 
 
-/*		Student student = new Student();
+		Student student = new Student();
 		student.setStudentId(101);
 		student.setStudentName("Alex");
 		student.setStudentCourse("MSc");
@@ -59,7 +60,7 @@ public class MappingApplication implements CommandLineRunner {
 
 		logger.info("saved student : {}", save.getStudentName());
 
-*/
+
 
 			/***
 			 * To access student name and address through student id. Here, we can see that the
@@ -195,8 +196,8 @@ public class MappingApplication implements CommandLineRunner {
 			for (Student s:stdList) {
 				logger.info("student {},{},{}", s.getStudentId(),s.getStudentName(),s.getStudentCourse());
 			}
-
 */
+
 
 		}
 
