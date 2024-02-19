@@ -1,4 +1,4 @@
-package com.sesc.mapping.entities;
+package com.sesc.mapping.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -10,7 +10,7 @@ import lombok.Data;
 @Data
 public class Address {
     @Id
-    private int houseNumber;
+    private Integer houseNumber;
     private String streetName;
     private String postCode;
     private String countryName;
